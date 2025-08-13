@@ -5,6 +5,34 @@ Your goal is to complete a **Library Management System** by filling in the missi
 The main structure is already built for you — just follow the `// STUDENT TASK:` comments in the code files.
 
 ---
+## 💾 How to Save Your Progress with Git
+
+It's a good practice to save your work after completing each step. This creates a checkpoint you can return to if something goes wrong.
+
+1.  **Create a New Branch**
+    Create your own branch to work on. This keeps your changes separate from the main codebase.
+    ```bash
+    # Creates a new branch and switches to it
+    git checkout -b your-name-solutions
+    ```
+
+2.  **Add & Commit Your Code**
+    After you've made changes (e.g., after finishing a step), you need to save them. First, you "stage" them with `git add`, then you "commit" them with a message describing your work.
+    ```bash
+    # Stage all changed files
+    git add .
+
+    # Save the staged files with a clear message
+    git commit -m "feat: Complete Step 3 - Add and Display Books"
+    ```
+
+3.  **Push Your Code**
+    Push your branch to the remote repository (like GitHub). This uploads your saved commits.
+    ```bash
+    # Upload your branch
+    git push origin your-name-solutions
+    ```
+---
 
 ## 📂 Step 1: Understand the Project Files
 
