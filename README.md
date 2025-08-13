@@ -30,7 +30,7 @@ It's a good practice to save your work after completing each step. This creates 
     Push your branch to the remote repository (like GitHub). This uploads your saved commits.
     ```bash
     # Upload your branch
-    git push origin your-name-solutions
+    git push origin your-name
     ```
 ---
 
