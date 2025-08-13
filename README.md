@@ -32,6 +32,12 @@ It's a good practice to save your work after completing each step. This creates 
     # Upload your branch
     git push origin your-name
     ```
+4.  **Update Your Code**
+pull your branch from the remote repository (like GitHub). This update your friends commits.
+```bash
+# Upload your branch
+git pull origin main
+```
 ---
 
 ## 📂 Step 1: Understand the Project Files
