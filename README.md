@@ -13,7 +13,7 @@ It's a good practice to save your work after completing each step. This creates 
     Create your own branch to work on. This keeps your changes separate from the main codebase.
     ```bash
     # Creates a new branch and switches to it
-    git checkout -b your-name-solutions
+    git checkout -b your-name
     ```
 
 2.  **Add & Commit Your Code**
