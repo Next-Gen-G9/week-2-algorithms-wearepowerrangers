@@ -55,26 +55,58 @@ std::vector<Book> loadBooks() {
 // This exercise covers: functions, std::vector, std::string
 void addBook(std::vector<Book>& books) {
     // 1. Create a new 'Book' object.
+    Book newBook;
+                 
     // 2. Set its 'id'. A simple way is to use the current size of the vector: books.size() + 1.
+    newBook.id = books.size() + 1;
+      
     // 3. Prompt the user to "Enter title: " and read the input into the book's 'title'.
+    std::cout << "Enter title: ";
+    std::getline(std::cin, newBook.title);
+                        
     // 4. Prompt the user to "Enter author: " and read the input into the book's 'author'.
+    std::cout << "Enter author: ";
+    std::getline(std::cin, newBook.author);
+
+
+
     // 5. Set the book's 'isAvailable' status to true.
+    newBook.isAvailable = true;
+        
     // 6. Add the new book object to the 'books' vector using push_back().
+    books.push_back(newBook);
+                
     // 7. Print a confirmation message.
+    std::cout << "Book added successfully! ID: " << newBook.id << std::endl;
 }
 
 // STUDENT TASK: Implement the displayAllBooks function.
 // This exercise covers: functions, std::vector
 void displayAllBooks(const std::vector<Book>& books) {
     // 1. Print a formatted header for the book list.
+    std::cout << "ID\tTitle\t\tAuthor\t\tAvailable" << std::endl; 
+    std::cout << "---------------------------------------------" << std::endl;
+
     // 2. Create a loop that iterates through the entire 'books' vector.
+    for (int i = 0; i < books.size(); ++i) {
     // 3. Inside the loop, print the details of each book (id, title, author, availability).
+        
+        std::cout << books[i].id << "\t"   
+                  << books[i].title << "\t\t"
+                  << books[i].author << "\t\t"
+                  << (books[i].isAvailable ? "Yes" : "No") << std::endl;        
+
+ 
+    }
+ 
+
 }
 
 // STUDENT TASK: Implement findBookById to return a pointer.
 // This exercise covers: functions, pointers (&)
 Book* findBookById(std::vector<Book>& books, int id) {
-    // 1. Create a loop to iterate through the 'books' vector.
+    // 1. Create a loop to iterate through the 'books' vector. 
+    for(int i = 0 ; i<books.size();i++)
     // 2. Inside the loop, check if the 'id' of the current book matches the 'id' parameter.
     // 3. If it matches, return the memory address of that book object. (Hint: use the '&' operator).
     // 4. If the loop finishes and no book is found, return 'nullptr'.

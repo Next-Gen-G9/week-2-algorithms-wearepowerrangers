@@ -34,6 +34,7 @@ int main() {
             runUserSession();
         }
     }
+
     return 0;
 }
 
@@ -50,6 +51,11 @@ void runAdminSession() {
     }
 }
 
-void runUserSession() { /* ... Provided ... */ }
+void runUserSession() {
+    std::vector<Book> libraryBooks = loadBooks();    
+    /* ... Provided ... */ 
+     
+   
+}
 // [The full code for main, runAdminSession, etc. would be provided to the student]
 // [as it acts as the test harness for their implemented functions.]
