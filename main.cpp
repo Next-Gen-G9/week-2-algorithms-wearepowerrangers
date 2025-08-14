@@ -36,6 +36,7 @@ int main() {
     }
     int id;
     int name;
+    int age;
     return 0;
 }
 
