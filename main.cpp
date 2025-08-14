@@ -35,6 +35,7 @@ int main() {
         }
     }
     int id;
+    int name;
     return 0;
 }
 
