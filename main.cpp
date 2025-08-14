@@ -34,6 +34,7 @@ int main() {
             runUserSession();
         }
     }
+    int id;
     return 0;
 }
 
